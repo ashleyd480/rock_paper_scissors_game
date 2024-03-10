@@ -6,6 +6,8 @@
 
 This project was completed in January 2024 as part of my pre-work for General Assembly after completing a 20-hour course on the basics of HTML, CSS, and Javascript.
 
+![Game Screenshot](assets/game-screenshot.png)
+
 ---
 
 # How to Play
@@ -29,6 +31,8 @@ There are two functions- answerYes and answerNo. Both the "yes" and "no" button 
 To ensure that the player input is only one of the following- rock, paper, scissors- validation is built in with an if/else statement. We only want the game to run if the player has entered one of those 3 choices (and we used .toLowerCase so that it's not case sensitive)
 
 If the choice input does not match, an alert pops up to advise the player to "Please type options exactly: rock, paper, scissors." Otherwise, the compareChoices function runs to help determine the outcome of the game.
+
+![Validation Screenshot](assets/validation.png)
 
 ## Computer Choice
 
