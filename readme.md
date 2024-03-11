@@ -58,15 +58,15 @@ playerChose() is executed when player clicks Submit. Then, the system validates 
 
 Within compareChoices() function, based on what the computer and player chose, the displayResult() function then displays the result and who won.
 
-
 ---
 
 # What I Learned
 
-## Array Naming Convention 
+## Array Naming Convention
+
 If the indices of an array have some semantic meaning, it's better to assign a name to the indices of the array rather than the elements.
 
-With the gameOptons array, we assign the index positon to a variable name. 
+With the gameOptons array, we assign the index positon to a variable name.
 
     const gameOptions = ["paper", "scissors", "rock"];
     const Paper = 0;
@@ -77,9 +77,14 @@ This way, when we "call them" later in the if/else statements when comparing com
 
 ![Array Variable Naming Screenshot](assets/array-name-var.png)
 
-
 ## toLowerCase()
-This was used for validating player input was one of the 3 choices of rock, paper, scissors. By adding this, it ensures that regardless of case, as long as the character typed in the input box match, the option would be accepted. 
+
+This was used for validating player input was one of the 3 choices of rock, paper, scissors. By adding this, it ensures that regardless of case, as long as the character typed in the input box match, the option would be accepted.
 
 ## DOM Best Practice
-You want to typically avoid adding or deleting HTML elements because it's "expensive" to modify the DOM and can cause a redraw. Redraw means that everytime the page is modified through DOM, the browser needs to redraw the affected parts of the pages to reflect these changes. Excessive redraws can degrade the page's performance and responsiveness. 
+
+You want to typically avoid adding or deleting HTML elements because it's "expensive" to modify the DOM and can cause a redraw. Redraw means that everytime the page is modified through DOM, the browser needs to redraw the affected parts of the pages to reflect these changes. Excessive redraws can degrade the page's performance and responsiveness.
+
+This is why in this case we update the div's inner text vs creating a new line of a message when the button of yes/no is clicked at the beginning of the game.
+
+![Add Text Screenshot](assets/aaddtext.png)

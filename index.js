@@ -1,14 +1,15 @@
 /*added function to define what happens when Yes or No clicked */
 function answerYes() {
-    document.querySelector("#response").innerText = "Player, choose your option";}
+  document.querySelector("#response").innerText = "Player, choose your option";
+}
     
-    document.querySelector("#yes").addEventListener("click", answerYes);
+document.querySelector("#yes").addEventListener("click", answerYes);
     
-    function answerNo() {
-    document.querySelector("#response").innerText = "Wrong. You are ready. Go click Yes";}
+function answerNo() {
+  document.querySelector("#response").innerText = "Wrong. You are ready. Go click Yes";
+}
     
-    
-    document.querySelector("#no").addEventListener("click", answerNo);
+document.querySelector("#no").addEventListener("click", answerNo);
     
     /* We use const as there are only 3 options to this game and we use array to list the elements out. We assign the index positon to a variable name. When we "call them" we refer to them as gameOption[Paper] etc as it's easier to understand */
     const gameOptions = ["paper", "scissors", "rock"];
