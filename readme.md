@@ -87,4 +87,4 @@ You want to typically avoid adding or deleting HTML elements because it's "expen
 
 This is why in this case we update the div's inner text vs creating a new line of a message when the button of yes/no is clicked at the beginning of the game.
 
-![Add Text Screenshot](assets/aaddtext.png)
+![Add Text Screenshot](assets/addtext.png)
