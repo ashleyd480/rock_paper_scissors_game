@@ -36,9 +36,7 @@ If the choice input does not match, an alert pops up to advise the player to "Pl
 
 ## Computer Choice
 
-We use an array titled gameOption to list the options out. We assign the index positon to a variable name. This way, when we "call them" later in the if/else statements when comparing computer vs player choice- we refer to them as gameOption[Paper] etc as it's easier to understand.
-
-To randomize what the computer chooose, we used math floor and math random in the function computerChooses (). The math object of math random selects a number from 0 to up to 1- this is then mutliplied by 3. The math.floor rounds it down so we will only get 0,1,2 for the answer- which represent the positions of the choices in the array.
+We use an array titled gameOption to list the options out. To randomize what the computer chooose, we used math floor and math random in the function computerChooses (). The math object of math random selects a number from 0 to up to 1- this is then mutliplied by 3. The math.floor rounds it down so we will only get 0,1,2 for the answer- which represent the positions of the choices in the array.
 
 We set variable of computerChoice to be equal to the output of that randomized function- which gives us whether computer chose rock, paper, or scissors.
 
@@ -59,3 +57,29 @@ So how does it all tie together and how do we ulimately see the result?
 playerChose() is executed when player clicks Submit. Then, the system validates the player's choice and whether it matches rock, paper, or scissors. If so, then it runs compareChoices() which compares what the computer chose (output calculated by computerChoose()) vs what the player chose.
 
 Within compareChoices() function, based on what the computer and player chose, the displayResult() function then displays the result and who won.
+
+
+---
+
+# What I Learned
+
+## Array Naming Convention 
+If the indices of an array have some semantic meaning, it's better to assign a name to the indices of the array rather than the elements.
+
+With the gameOptons array, we assign the index positon to a variable name. 
+
+    const gameOptions = ["paper", "scissors", "rock"];
+    const Paper = 0;
+    const Scissors = 1;
+    const Rock = 2;
+
+This way, when we "call them" later in the if/else statements when comparing computer vs player choice- we refer to them as gameOption[Paper] etc as it's easier to understand.
+
+![Array Variable Naming Screenshot](assets/array-name-var.png)
+
+
+## toLowerCase()
+This was used for validating player input was one of the 3 choices of rock, paper, scissors. By adding this, it ensures that regardless of case, as long as the character typed in the input box match, the option would be accepted. 
+
+## DOM Best Practice
+You want to typically avoid adding or deleting HTML elements because it's "expensive" to modify the DOM and can cause a redraw. Redraw means that everytime the page is modified through DOM, the browser needs to redraw the affected parts of the pages to reflect these changes. Excessive redraws can degrade the page's performance and responsiveness. 
