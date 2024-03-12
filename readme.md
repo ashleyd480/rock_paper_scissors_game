@@ -4,7 +4,7 @@
 
 # Intro
 
-This project was completed in January 2024 as part of my pre-work for General Assembly after completing a 20-hour course on the basics of HTML, CSS, and Javascript.
+This project was completed in January 2024 as part of my pre-work for General Assembly after completing a 20-hour course on the basics of HTML, CSS, and JavaScript.
 
 ![Game Screenshot](assets/game-screenshot.png)
 
@@ -20,7 +20,7 @@ Next, the player has to type rock, paper, or scissors and clicks submit. The com
 
 # Functionality
 
-The javascript code leverages basic Javascript functons and DOM manipulation.
+The JavaScript code leverages basic JavaScript functons and DOM manipulation.
 
 ## Ready to Play : Yes/No
 
@@ -66,7 +66,7 @@ Within compareChoices() function, based on what the computer and player chose, t
 
 If the indices of an array have some semantic meaning, it's better to assign a name to the indices of the array rather than the elements.
 
-With the gameOptons array, we assign the index positon to a variable name.
+With the gameOptons array, we assign the index position to a variable name.
 
     const gameOptions = ["paper", "scissors", "rock"];
     const Paper = 0;
